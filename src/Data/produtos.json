@@ -1,0 +1,702 @@
+[
+  {
+      "id": 1,
+      "nome": "Produto A1",
+      "preco": 20.49,
+      "descricao": "Descrição única para o Produto A1.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 2,
+      "nome": "Produto B2",
+      "preco": 20.99,
+      "descricao": "Descrição única para o Produto B2.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 3,
+      "nome": "Produto C3",
+      "preco": 21.49,
+      "descricao": "Descrição única para o Produto C3.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 4,
+      "nome": "Produto D4",
+      "preco": 21.99,
+      "descricao": "Descrição única para o Produto D4.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 5,
+      "nome": "Produto E5",
+      "preco": 22.49,
+      "descricao": "Descrição única para o Produto E5.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 6,
+      "nome": "Produto F6",
+      "preco": 22.99,
+      "descricao": "Descrição única para o Produto F6.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 7,
+      "nome": "Produto G7",
+      "preco": 23.49,
+      "descricao": "Descrição única para o Produto G7.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 8,
+      "nome": "Produto H8",
+      "preco": 23.99,
+      "descricao": "Descrição única para o Produto H8.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 9,
+      "nome": "Produto I9",
+      "preco": 24.49,
+      "descricao": "Descrição única para o Produto I9.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 10,
+      "nome": "Produto J10",
+      "preco": 24.99,
+      "descricao": "Descrição única para o Produto J10.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 11,
+      "nome": "Produto K11",
+      "preco": 25.49,
+      "descricao": "Descrição única para o Produto K11.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 12,
+      "nome": "Produto L12",
+      "preco": 25.99,
+      "descricao": "Descrição única para o Produto L12.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 13,
+      "nome": "Produto M13",
+      "preco": 26.49,
+      "descricao": "Descrição única para o Produto M13.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 14,
+      "nome": "Produto N14",
+      "preco": 26.99,
+      "descricao": "Descrição única para o Produto N14.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 15,
+      "nome": "Produto O15",
+      "preco": 27.49,
+      "descricao": "Descrição única para o Produto O15.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 16,
+      "nome": "Produto P16",
+      "preco": 27.99,
+      "descricao": "Descrição única para o Produto P16.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 17,
+      "nome": "Produto Q17",
+      "preco": 28.49,
+      "descricao": "Descrição única para o Produto Q17.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 18,
+      "nome": "Produto R18",
+      "preco": 28.99,
+      "descricao": "Descrição única para o Produto R18.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 19,
+      "nome": "Produto S19",
+      "preco": 29.49,
+      "descricao": "Descrição única para o Produto S19.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 20,
+      "nome": "Produto T20",
+      "preco": 29.99,
+      "descricao": "Descrição única para o Produto T20.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 21,
+      "nome": "Produto U21",
+      "preco": 30.49,
+      "descricao": "Descrição única para o Produto U21.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 22,
+      "nome": "Produto V22",
+      "preco": 30.99,
+      "descricao": "Descrição única para o Produto V22.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 23,
+      "nome": "Produto W23",
+      "preco": 31.49,
+      "descricao": "Descrição única para o Produto W23.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 24,
+      "nome": "Produto X24",
+      "preco": 31.99,
+      "descricao": "Descrição única para o Produto X24.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 25,
+      "nome": "Produto Y25",
+      "preco": 32.49,
+      "descricao": "Descrição única para o Produto Y25.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 26,
+      "nome": "Produto Z26",
+      "preco": 32.99,
+      "descricao": "Descrição única para o Produto Z26.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 27,
+      "nome": "Produto A27",
+      "preco": 33.49,
+      "descricao": "Descrição única para o Produto A27.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 28,
+      "nome": "Produto B28",
+      "preco": 33.99,
+      "descricao": "Descrição única para o Produto B28.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 29,
+      "nome": "Produto C29",
+      "preco": 34.49,
+      "descricao": "Descrição única para o Produto C29.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 30,
+      "nome": "Produto D30",
+      "preco": 34.99,
+      "descricao": "Descrição única para o Produto D30.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 31,
+      "nome": "Produto E31",
+      "preco": 35.49,
+      "descricao": "Descrição única para o Produto E31.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 32,
+      "nome": "Produto F32",
+      "preco": 35.99,
+      "descricao": "Descrição única para o Produto F32.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 33,
+      "nome": "Produto G33",
+      "preco": 36.49,
+      "descricao": "Descrição única para o Produto G33.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 34,
+      "nome": "Produto H34",
+      "preco": 36.99,
+      "descricao": "Descrição única para o Produto H34.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 35,
+      "nome": "Produto I35",
+      "preco": 37.49,
+      "descricao": "Descrição única para o Produto I35.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 36,
+      "nome": "Produto J36",
+      "preco": 37.99,
+      "descricao": "Descrição única para o Produto J36.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 37,
+      "nome": "Produto K37",
+      "preco": 38.49,
+      "descricao": "Descrição única para o Produto K37.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 38,
+      "nome": "Produto L38",
+      "preco": 38.99,
+      "descricao": "Descrição única para o Produto L38.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 39,
+      "nome": "Produto M39",
+      "preco": 39.49,
+      "descricao": "Descrição única para o Produto M39.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 40,
+      "nome": "Produto N40",
+      "preco": 39.99,
+      "descricao": "Descrição única para o Produto N40.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 41,
+      "nome": "Produto O41",
+      "preco": 40.49,
+      "descricao": "Descrição única para o Produto O41.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 42,
+      "nome": "Produto P42",
+      "preco": 40.99,
+      "descricao": "Descrição única para o Produto P42.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 43,
+      "nome": "Produto Q43",
+      "preco": 41.49,
+      "descricao": "Descrição única para o Produto Q43.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 44,
+      "nome": "Produto R44",
+      "preco": 41.99,
+      "descricao": "Descrição única para o Produto R44.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 45,
+      "nome": "Produto S45",
+      "preco": 42.49,
+      "descricao": "Descrição única para o Produto S45.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 46,
+      "nome": "Produto T46",
+      "preco": 42.99,
+      "descricao": "Descrição única para o Produto T46.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 47,
+      "nome": "Produto U47",
+      "preco": 43.49,
+      "descricao": "Descrição única para o Produto U47.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 48,
+      "nome": "Produto V48",
+      "preco": 43.99,
+      "descricao": "Descrição única para o Produto V48.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 49,
+      "nome": "Produto W49",
+      "preco": 44.49,
+      "descricao": "Descrição única para o Produto W49.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 50,
+      "nome": "Produto X50",
+      "preco": 44.99,
+      "descricao": "Descrição única para o Produto X50.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 51,
+      "nome": "Produto Y51",
+      "preco": 45.49,
+      "descricao": "Descrição única para o Produto Y51.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 52,
+      "nome": "Produto Z52",
+      "preco": 45.99,
+      "descricao": "Descrição única para o Produto Z52.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 53,
+      "nome": "Produto A53",
+      "preco": 46.49,
+      "descricao": "Descrição única para o Produto A53.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 54,
+      "nome": "Produto B54",
+      "preco": 46.99,
+      "descricao": "Descrição única para o Produto B54.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 55,
+      "nome": "Produto C55",
+      "preco": 47.49,
+      "descricao": "Descrição única para o Produto C55.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 56,
+      "nome": "Produto D56",
+      "preco": 47.99,
+      "descricao": "Descrição única para o Produto D56.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 57,
+      "nome": "Produto E57",
+      "preco": 48.49,
+      "descricao": "Descrição única para o Produto E57.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 58,
+      "nome": "Produto F58",
+      "preco": 48.99,
+      "descricao": "Descrição única para o Produto F58.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 59,
+      "nome": "Produto G59",
+      "preco": 49.49,
+      "descricao": "Descrição única para o Produto G59.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 60,
+      "nome": "Produto H60",
+      "preco": 49.99,
+      "descricao": "Descrição única para o Produto H60.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 61,
+      "nome": "Produto I61",
+      "preco": 50.49,
+      "descricao": "Descrição única para o Produto I61.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 62,
+      "nome": "Produto J62",
+      "preco": 50.99,
+      "descricao": "Descrição única para o Produto J62.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 63,
+      "nome": "Produto K63",
+      "preco": 51.49,
+      "descricao": "Descrição única para o Produto K63.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 64,
+      "nome": "Produto L64",
+      "preco": 51.99,
+      "descricao": "Descrição única para o Produto L64.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 65,
+      "nome": "Produto M65",
+      "preco": 52.49,
+      "descricao": "Descrição única para o Produto M65.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 66,
+      "nome": "Produto N66",
+      "preco": 52.99,
+      "descricao": "Descrição única para o Produto N66.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 67,
+      "nome": "Produto O67",
+      "preco": 53.49,
+      "descricao": "Descrição única para o Produto O67.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 68,
+      "nome": "Produto P68",
+      "preco": 53.99,
+      "descricao": "Descrição única para o Produto P68.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 69,
+      "nome": "Produto Q69",
+      "preco": 54.49,
+      "descricao": "Descrição única para o Produto Q69.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 70,
+      "nome": "Produto R70",
+      "preco": 54.99,
+      "descricao": "Descrição única para o Produto R70.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 71,
+      "nome": "Produto S71",
+      "preco": 55.49,
+      "descricao": "Descrição única para o Produto S71.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 72,
+      "nome": "Produto T72",
+      "preco": 55.99,
+      "descricao": "Descrição única para o Produto T72.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 73,
+      "nome": "Produto U73",
+      "preco": 56.49,
+      "descricao": "Descrição única para o Produto U73.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 74,
+      "nome": "Produto V74",
+      "preco": 56.99,
+      "descricao": "Descrição única para o Produto V74.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 75,
+      "nome": "Produto W75",
+      "preco": 57.49,
+      "descricao": "Descrição única para o Produto W75.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 76,
+      "nome": "Produto X76",
+      "preco": 57.99,
+      "descricao": "Descrição única para o Produto X76.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 77,
+      "nome": "Produto Y77",
+      "preco": 58.49,
+      "descricao": "Descrição única para o Produto Y77.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 78,
+      "nome": "Produto Z78",
+      "preco": 58.99,
+      "descricao": "Descrição única para o Produto Z78.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 79,
+      "nome": "Produto A79",
+      "preco": 59.49,
+      "descricao": "Descrição única para o Produto A79.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 80,
+      "nome": "Produto B80",
+      "preco": 59.99,
+      "descricao": "Descrição única para o Produto B80.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 81,
+      "nome": "Produto C81",
+      "preco": 60.49,
+      "descricao": "Descrição única para o Produto C81.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 82,
+      "nome": "Produto D82",
+      "preco": 60.99,
+      "descricao": "Descrição única para o Produto D82.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 83,
+      "nome": "Produto E83",
+      "preco": 61.49,
+      "descricao": "Descrição única para o Produto E83.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 84,
+      "nome": "Produto F84",
+      "preco": 61.99,
+      "descricao": "Descrição única para o Produto F84.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 85,
+      "nome": "Produto G85",
+      "preco": 62.49,
+      "descricao": "Descrição única para o Produto G85.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 86,
+      "nome": "Produto H86",
+      "preco": 62.99,
+      "descricao": "Descrição única para o Produto H86.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 87,
+      "nome": "Produto I87",
+      "preco": 63.49,
+      "descricao": "Descrição única para o Produto I87.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 88,
+      "nome": "Produto J88",
+      "preco": 63.99,
+      "descricao": "Descrição única para o Produto J88.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 89,
+      "nome": "Produto K89",
+      "preco": 64.49,
+      "descricao": "Descrição única para o Produto K89.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 90,
+      "nome": "Produto L90",
+      "preco": 64.99,
+      "descricao": "Descrição única para o Produto L90.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 91,
+      "nome": "Produto M91",
+      "preco": 65.49,
+      "descricao": "Descrição única para o Produto M91.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 92,
+      "nome": "Produto N92",
+      "preco": 65.99,
+      "descricao": "Descrição única para o Produto N92.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 93,
+      "nome": "Produto O93",
+      "preco": 66.49,
+      "descricao": "Descrição única para o Produto O93.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 94,
+      "nome": "Produto P94",
+      "preco": 66.99,
+      "descricao": "Descrição única para o Produto P94.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 95,
+      "nome": "Produto Q95",
+      "preco": 67.49,
+      "descricao": "Descrição única para o Produto Q95.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 96,
+      "nome": "Produto R96",
+      "preco": 67.99,
+      "descricao": "Descrição única para o Produto R96.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 97,
+      "nome": "Produto S97",
+      "preco": 68.49,
+      "descricao": "Descrição única para o Produto S97.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 98,
+      "nome": "Produto T98",
+      "preco": 68.99,
+      "descricao": "Descrição única para o Produto T98.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 99,
+      "nome": "Produto U99",
+      "preco": 69.49,
+      "descricao": "Descrição única para o Produto U99.",
+      "foto": "produto.png"
+  },
+  {
+      "id": 100,
+      "nome": "Produto V100",
+      "preco": 69.99,
+      "descricao": "Descrição única para o Produto V100.",
+      "foto": "produto.png"
+  }
+]
