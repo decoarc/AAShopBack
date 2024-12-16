@@ -1,46 +1,40 @@
 import { Request, Response } from "express";
 import path from "path";
 import fs from "fs";
+import { Pool } from "pg";
 
-interface Produt {
-  id: number;
-  nome: string;
-  preco: number;
-  descricao: string;
-  foto: string;
-}
+require("dotenv").config();
 
-export const getProducts = (req: Request, res: Response) => {
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+});
+
+export const getProducts = async (req: Request, res: Response) => {
   const { page = 0, pageSize = 10, query = "" } = req.query;
 
-  const queryString = String(query).toLowerCase();
+  try {
+    const offset = Number(page) * Number(pageSize);
+    const limit = Number(pageSize);
 
-  const filePath = path.join(__dirname, "../data/produtos.json");
+    const client = await pool.connect();
 
-  fs.readFile(filePath, "utf8", (err, data) => {
-    if (err) {
-      console.error("Erro ao ler o arquivo:", err);
-      return res.status(500).json({ error: "Erro ao carregar os produtos" });
-    }
+    const result = await client.query(
+      `SELECT * FROM produtos 
+       WHERE LOWER(nome) LIKE $1
+       ORDER BY id
+       LIMIT $2 OFFSET $3`,
+      [`%${String(query).toLowerCase()}%`, limit, offset]
+    );
 
-    try {
-      const produtos: Produt[] = JSON.parse(data);
+    const produtos = result.rows;
 
-      const filteredProducts = produtos.filter((produto) =>
-        produto.nome.toLowerCase().includes(queryString)
-      );
+    const nextPage = produtos.length < limit ? null : Number(page) + 1;
 
-      const start = Number(page) * Number(pageSize);
-      const end = start + Number(pageSize);
+    client.release();
 
-      const paginatedProducts = filteredProducts.slice(start, end);
-
-      const nextPage = end < filteredProducts.length ? Number(page) + 1 : null;
-
-      res.status(200).json({ data: paginatedProducts, nextPage });
-    } catch (parseError) {
-      console.error("Erro ao analisar JSON:", parseError);
-      res.status(500).json({ error: "Erro ao analisar os produtos" });
-    }
-  });
+    res.status(200).json({ data: produtos, nextPage });
+  } catch (error) {
+    console.error("Erro ao buscar produtos:", error);
+    res.status(500).json({ error: "Erro ao buscar produtos" });
+  }
 };
