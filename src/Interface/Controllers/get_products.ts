@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import path from "path";
 import fs from "fs";
 import { Pool } from "pg";
+import { pathToFileURL } from "url";
 
 require("dotenv").config();
 
@@ -19,7 +20,7 @@ export const getProducts = async (req: Request, res: Response) => {
     const client = await pool.connect();
 
     const result = await client.query(
-      `SELECT * FROM produtos 
+      `SELECT * FROM produtos
        WHERE LOWER(nome) LIKE $1
        ORDER BY id
        LIMIT $2 OFFSET $3`,
