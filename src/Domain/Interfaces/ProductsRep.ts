@@ -5,7 +5,7 @@ export interface ProductsRep {
   findBySearch(
     page: number,
     pageSize: number,
-    query: string
+    query: string | undefined
   ): Promise<ProductsDTOOut>;
   create(product: Products): Promise<void>;
   update(product: Products): Promise<void>;

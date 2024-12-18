@@ -1,10 +1,10 @@
-import { Pool, PoolClient } from "pg";
+import { Pool, PoolClient, types } from "pg";
 import { ProductsRep } from "../../Domain/Interfaces/ProductsRep";
 import { ProductsDTOOut } from "../DTO/Products";
 import { Products } from "../../Domain/Entities/Products";
 require("dotenv").config();
 
-export class ProductsRepository implements ProductsRep {
+export class InMemoryProductsRepository implements ProductsRep {
   private pool: Pool;
 
   constructor() {
@@ -16,7 +16,7 @@ export class ProductsRepository implements ProductsRep {
   async findBySearch(
     page: number,
     pageSize: number,
-    query: string
+    query: string | undefined
   ): Promise<ProductsDTOOut> {
     return new Promise(async (res, rej) => {
       const client: PoolClient = await this.pool.connect();
@@ -25,7 +25,7 @@ export class ProductsRepository implements ProductsRep {
          WHERE LOWER(nome) LIKE $1
          ORDER BY id
          LIMIT $2 OFFSET $3`,
-        [`%${String(query).toLowerCase()}%`, pageSize, page]
+        [`%${String(query ?? "").toLowerCase()}%`, pageSize, page]
       );
 
       const produtos = result.rows;

@@ -1,6 +1,9 @@
 import express, { Application } from "express";
 import cors from "cors";
 import routes from "./Interface/Routes";
+import { types } from "pg";
+
+types.setTypeParser(1700, (value) => parseFloat(value));
 
 const app: Application = express();
 
