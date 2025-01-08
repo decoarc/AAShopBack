@@ -9,7 +9,7 @@ types.setTypeParser(1700, (value) => parseFloat(value));
 const app = express();
 
 const corsOptions = {
-  origin: "http://localhost:3000/",
+  origin: "https://decoarc.github.io/AAShop/",
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
