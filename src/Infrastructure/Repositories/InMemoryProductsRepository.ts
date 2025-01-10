@@ -18,61 +18,54 @@ export class InMemoryProductsRepository implements ProductsRep {
     pageSize: number,
     query: string | undefined
   ): Promise<ProductsDTOOut> {
-    const client: PoolClient = await this.pool.connect();
-    const offset = (page - 1) * pageSize;
-    try {
+    return new Promise(async (res, rej) => {
+      const client: PoolClient = await this.pool.connect();
       const result = await client.query(
         `SELECT * FROM produtos
          WHERE LOWER(nome) LIKE $1
          ORDER BY id
          LIMIT $2 OFFSET $3`,
-        [`%${String(query ?? "").toLowerCase()}%`, pageSize, offset]
+        [`%${String(query ?? "").toLowerCase()}%`, pageSize, page]
       );
 
       const produtos = result.rows;
+
       const nextPage = produtos.length < pageSize ? null : Number(page) + 1;
-      return { data: produtos, nextPage };
-    } catch (error) {
-      throw error;
-    } finally {
-      client.release();
-    }
+      return res({ data: produtos, nextPage });
+    });
   }
   async create(product: Products): Promise<void> {
-    const client: PoolClient = await this.pool.connect();
-    try {
+    return new Promise(async (res, rej) => {
+      const client: PoolClient = await this.pool.connect();
       await client.query(
         `INSERT INTO produtos (nome, descricao, preco)
          VALUES ($1, $2, $3)`,
         [product.nome, product.descricao, product.preco]
       );
-    } finally {
-      client.release();
-    }
+      return res();
+    });
   }
   async update(product: Products): Promise<void> {
-    const client: PoolClient = await this.pool.connect();
-    try {
+    return new Promise(async (res, rej) => {
+      const client: PoolClient = await this.pool.connect();
       await client.query(
         `UPDATE produtos
          SET nome = $1, descricao = $2, preco = $3
          WHERE id = $4`,
         [product.nome, product.descricao, product.preco, product.id]
       );
-    } finally {
-      client.release();
-    }
+      return res();
+    });
   }
   async delete(id: number): Promise<void> {
-    const client: PoolClient = await this.pool.connect();
-    try {
+    return new Promise(async (res, rej) => {
+      const client: PoolClient = await this.pool.connect();
       await client.query(
         `DELETE FROM produtos
          WHERE id = $1`,
         [id]
       );
-    } finally {
-      client.release();
-    }
+      return res();
+    });
   }
 }
