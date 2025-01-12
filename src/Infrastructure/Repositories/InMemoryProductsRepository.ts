@@ -2,6 +2,7 @@ import { Pool, PoolClient, types } from "pg";
 import { ProductsRep } from "../../Domain/Interfaces/ProductsRep";
 import { ProductsDTOOut } from "../DTO/Products";
 import { Products } from "../../Domain/Entities/Products";
+import { parse } from "node:path";
 require("dotenv").config();
 
 export class InMemoryProductsRepository implements ProductsRep {
@@ -25,10 +26,18 @@ export class InMemoryProductsRepository implements ProductsRep {
          WHERE LOWER(nome) LIKE $1
          ORDER BY id
          LIMIT $2 OFFSET $3`,
-        [`%${String(query ?? "").toLowerCase()}%`, pageSize, page]
+        [`%${String(query ?? "").toLowerCase()}%`, pageSize, page * pageSize]
       );
 
       const produtos = result.rows;
+
+      const countResult = await client.query(
+        `SELECT COUNT(*) FROM produtos
+         WHERE LOWER(nome) LIKE $1`,
+        [`%${String(query ?? "").toLowerCase()}%`]
+      );
+
+      const totalCount = parseInt(countResult.rows[0].count, 10);
 
       const nextPage = produtos.length < pageSize ? null : Number(page) + 1;
       return res({ data: produtos, nextPage });
