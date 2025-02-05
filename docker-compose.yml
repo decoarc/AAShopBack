@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak
+    ports:
+      - "8080:8080"
+    environment:
+      - KC_DB=postgres
+      - KC_DB_URL=jdbc:postgresql://ep-lucky-lake-a84ka939-pooler.eastus2.azure.neon.tech/neondb
+      - KC_DB_USERNAME=neondb_owner
+      - KC_DB_PASSWORD=npg_E7JnYz1NcDwO
+      - KC_HOSTNAME=your-app-name.onrender.com
+      - KC_HTTP_ENABLED=true
+      - KC_PROXY=edge
+      - KC_DB_SCHEMA=public
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    command: ["start-dev"]
